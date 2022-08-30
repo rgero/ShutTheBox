@@ -169,6 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf25dfad165ae64489843b09e9174c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dices:
+  - {fileID: 3777560001797533438}
+  - {fileID: 1531244182145325879}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1212546116}
+  - component: {fileID: 1212546117}
   m_Layer: 0
   m_Name: Tile Container
   m_TagString: Untagged
@@ -387,6 +391,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1212546117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212546115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8289efb54d7cc46969cef18d684bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles: []
 --- !u!1 &1660087589
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +621,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5a1eadcc0f97e459d5d3bc7036740e, type: 3}
+--- !u!1 &1531244182145325879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7286176260523061069, guid: 4f5a1eadcc0f97e459d5d3bc7036740e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1531244182145325878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1688270974697231359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5071124896111569838, guid: f2c82be2ac3f5de478a5aacbd964e33d,
@@ -847,6 +870,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62c54c875bc0074c8a4c0cf336646ad, type: 3}
+--- !u!1 &3777560001797533438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3007599745573016404, guid: c62c54c875bc0074c8a4c0cf336646ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 3777560001797533437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3818931440144501004
 PrefabInstance:
   m_ObjectHideFlags: 0

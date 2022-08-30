@@ -40,4 +40,12 @@ public class TileController : MonoBehaviour
         shouldMove = true;
         direction = (isStanding) ? -1 : 1;
     }
+
+    public void ResetTile()
+    {
+        if (!isStanding)
+        {
+            ToggleMoving();
+        }
+    }
 }
