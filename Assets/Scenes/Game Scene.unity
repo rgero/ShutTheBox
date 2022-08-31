@@ -172,6 +172,7 @@ MonoBehaviour:
   dices:
   - {fileID: 3777560001797533438}
   - {fileID: 1531244182145325879}
+  NeedToRoll: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2f2fc7e8d16584fb6b774673a1963f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceContainer: {fileID: 420578361}
 --- !u!4 &1660087591
 Transform:
   m_ObjectHideFlags: 0
@@ -440,7 +442,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660087589}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

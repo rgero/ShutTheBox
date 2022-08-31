@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Roller : MonoBehaviour
+public class RollManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject[] dices;
@@ -10,6 +10,8 @@ public class Roller : MonoBehaviour
     bool rollingDice = false;
     int currentDice = 0;
     float timeBetween = 0.0f;
+
+    public bool NeedToRoll;
 
     void Start()
     {
@@ -22,6 +24,7 @@ public class Roller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rollingDice = true;
+            NeedToRoll = false;
         }
 
         if (rollingDice)
@@ -51,4 +54,21 @@ public class Roller : MonoBehaviour
         d.GetComponent<Rigidbody>().AddForce(Vector3.forward * 1000);
         d.GetComponent<Rigidbody>().AddTorque(new Vector3(100, 200, 300));
     }
+
+    public List<int> GetDiceResult()
+    {
+        List<int> list = new List<int>();
+
+        int total = 0;
+        foreach(GameObject dice in dices)
+        {
+            int currentValue = dice.GetComponent<Die_d6>().value;
+            list.Add(currentValue);
+            total += currentValue;
+        }
+
+        list.Add(total);
+
+        return list;
+    } 
 }
