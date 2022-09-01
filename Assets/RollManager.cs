@@ -6,8 +6,10 @@ public class RollManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject[] dices;
+    public GameObject ValidMoveText;
     private GameObject cameraGame;
     bool rollingDice = false;
+    bool needToUpdateBoard = false;
     int currentDice = 0;
     float timeBetween = 0.0f;
 
@@ -24,12 +26,12 @@ public class RollManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rollingDice = true;
+            needToUpdateBoard = true;
             NeedToRoll = false;
         }
 
         if (rollingDice)
         {
-            Debug.Log(timeBetween);
             timeBetween -= Time.deltaTime;
             if (timeBetween <= 0)
             {
@@ -70,5 +72,5 @@ public class RollManager : MonoBehaviour
         list.Add(total);
 
         return list;
-    } 
+    }
 }
