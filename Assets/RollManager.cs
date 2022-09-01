@@ -9,7 +9,6 @@ public class RollManager : MonoBehaviour
     public GameObject ValidMoveText;
     private GameObject cameraGame;
     bool rollingDice = false;
-    bool needToUpdateBoard = false;
     int currentDice = 0;
     float timeBetween = 0.0f;
 
@@ -26,7 +25,6 @@ public class RollManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rollingDice = true;
-            needToUpdateBoard = true;
             NeedToRoll = false;
         }
 
